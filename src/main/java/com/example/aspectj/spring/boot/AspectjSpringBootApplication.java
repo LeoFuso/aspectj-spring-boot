@@ -17,11 +17,6 @@ public class AspectjSpringBootApplication {
     }
 
     @Bean
-    public UselessBean uselessBean() {
-        return new UselessBean();
-    }
-
-    @Bean
     public JavaSyntax aspect() {
         return Aspects.aspectOf(JavaSyntax.class);
     }

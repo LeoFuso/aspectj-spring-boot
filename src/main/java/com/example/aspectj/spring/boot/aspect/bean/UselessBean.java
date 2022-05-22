@@ -2,8 +2,13 @@ package com.example.aspectj.spring.boot.aspect.bean;
 
 public class UselessBean {
 
-    public String doUselessBehavior() {
-        return "I exist";
+    private final String value;
+
+    public UselessBean(final String property) {
+        this.value = property;
     }
 
+    public String doUselessBehavior() {
+        return value;
+    }
 }
