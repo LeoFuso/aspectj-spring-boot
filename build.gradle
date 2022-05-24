@@ -43,7 +43,7 @@ dependencies {
 compileJava {
     ajc {
         options {
-            compilerArgs= ["-sourceroots", sourceSets.main.java.sourceDirectories.getAsPath(), "-XnoInline"]
+            compilerArgs= ["-sourceroots", sourceSets.main.java.sourceDirectories.getAsPath(), "-XnoInline", "-proc:none"]
         }
     }
 }
